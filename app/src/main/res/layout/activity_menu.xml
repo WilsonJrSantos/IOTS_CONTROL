@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Menu">
+<LinearLayout
+android:layout_marginTop="15dp"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:justificationMode="inter_word"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:lines="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sean Bienvenidos a la Aplicacion, seleccione una de las siguientes opciones para continuar."
+        />
+</LinearLayout>
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnpower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="pub"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/btntemphum"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/temperatura" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEMPERATURA"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/btnluz"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/focos" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LUCES"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/btnseguridad"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/talanon" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TALANQUERA"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:id="@+id/btnconfig"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/images" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANALISIS DE DATOS"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/btnayuda"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/info" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACERCA DE"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
